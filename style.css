@@ -12,7 +12,7 @@ nav {
     top: 0;
     z-index: 1000;
     padding: 0 20px;
-    transition: background-color 0.3s ease;    
+    transition: background-color 0.3s ease;
 }
 
 nav ul {
@@ -86,7 +86,7 @@ nav .brand-logo:hover {
     padding: 50px 20px;
     background: linear-gradient(135deg, #00796b, #004d40);
     color: white;
-    border-radius:0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
     flex-wrap: wrap;
 }
 
@@ -117,7 +117,7 @@ nav .brand-logo:hover {
     transition: background-color 0.3s ease;
     border-radius: 10px;
     font-weight: 600;
-   
+
 }
 
 .hero-text .btn:hover {
@@ -193,8 +193,10 @@ nav .brand-logo:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    text-align: center; /* Center-align all text inside the section */
+    text-align: center;
+    /* Center-align all text inside the section */
 }
+
 .about-section h3 {
     font-size: 2.2rem;
     color: #004d40;
@@ -434,6 +436,7 @@ nav .brand-logo:hover {
     overflow: hidden;
     text-align: center;
 }
+
 .projects-section h3 {
     font-size: 2.2rem;
     color: #004d40;
@@ -528,9 +531,10 @@ nav .brand-logo:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    text-align: center;
-    
+    margin-bottom: 50px;
 }
+
+
 
 .contact-section h3 {
     font-size: 2.2rem;
@@ -551,77 +555,72 @@ nav .brand-logo:hover {
     border-radius: 2px;
 }
 
-.contact-section p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    margin-right: 10%;
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-color: #004d40;
+    width: 80%;
     margin-left: 10%;
 }
 
-.contact-info {
-    list-style-type: none;
-    padding: 0;
-    margin-right: 10%;
-    margin-left: 10%;
+#contact-form textarea {
+    height: 150px;
+    resize: none;
 }
 
-.contact-info li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    color: #004d40;
-    
-}
-
-.contact-info i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
-
-.contact-form .input-field label {
-    font-size: 1rem;
-    color: #004d40;
-}
-
-.contact-form .input-field input,
-.contact-form .input-field textarea {
-    border-bottom: 1px solid #00796b;
-    font-size: 1rem;
-    padding: 10px;
-}
-
-.contact-form .input-field input:focus,
-.contact-form .input-field textarea:focus {
-    border-bottom: 2px solid #004d40;
-    box-shadow: none;
-}
-
-.contact-form .btn {
+#contact-form button[type="submit"] {
+    display: inline-block;
+    width: 20%;
     background-color: #00796b;
-    color: white;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 10px;
+    margin-left: 40%;
 }
 
-.contact-form .btn:hover {
-    background-color: #004d40;
+#contact-form button[type="submit"]:hover {
+    background-color: #2980b9;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    .contact-info li {
-        font-size: 1rem;
+    #contact-form {
+        padding: 15px;
     }
 
-    .contact-form .input-field input,
-    .contact-form .input-field textarea {
-        font-size: 0.9rem;
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        font-size: 14px;
     }
 
-    .contact-form .input-field label {
-        font-size: 0.9rem;
+    #contact-form button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        padding: 10px;
+    }
+
+    #contact-form button[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
     }
 }
 
@@ -645,4 +644,3 @@ nav .brand-logo:hover {
     margin: 0;
     font-size: 1rem;
 }
-
