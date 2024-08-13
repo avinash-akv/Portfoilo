@@ -578,7 +578,7 @@ nav .brand-logo:hover {
 
 #contact-form button[type="submit"] {
     display: inline-block;
-    width: 20%;
+    width: 30%;
     background-color: #00796b;
     color: #fff;
     font-size: 18px;
@@ -586,7 +586,7 @@ nav .brand-logo:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 40%;
+    margin-left: 35%;
 }
 
 #contact-form button[type="submit"]:hover {
