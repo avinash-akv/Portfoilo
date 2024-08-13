@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="pic 2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
@@ -13,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="JavaScript" href="script.js">
 </head>
 
 <body>
@@ -34,8 +36,8 @@
     <!-- Hero Section -->
     <div class="container hero-section" id="home">
         <div class="hero-text">
-            <h2>Avinash Kumar Verma</h2>
-            <span id="element"></span>
+            <h2>Hi, I am <br>Avinash Kumar Verma</h2>
+            <p>Data Analyst & Graphic Designer</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/avinash-kumar-verma/" target="_blank">
                     <i class="fab fa-linkedin"></i>
@@ -159,7 +161,7 @@
                     <div class="card-content">
                         <span class="card-title">File Tracking System</span>
                         <p class="card-description">Designed and deployed a File Tracking System to efficiently oversee
-                            document movement and status across the organization or institute.<br><b>Key Technology:</b> Php,
+                            document movement and status across the organization or institute.<br>Key Technology: Php,
                             Html, CSS, Bootstrap, JavaScript, MySQL.</p>
                         <a href="https://github.com/avinash-akv/File-Tracking-System" class="btn">View Project</a>
                     </div>
@@ -171,8 +173,9 @@
                     <div class="card-content">
                         <span class="card-title">ANNIE – The Voice Assistant</span>
                         <p class="card-description">Implemented ANNIE, a Virtual Voice Assistant for PC, that
-                            streamlined tasks like adding calendar events and streaming YouTube.<br><b>Key Technology:
-                                </b> Python, Qt Designer
+                            streamlined tasks like adding calendar events and streaming YouTube.<br><b>Key
+                                Technology:<b>
+                                    Python, Qt Designer
                         </p>
                         <a href="https://github.com/avinash-akv/ANNIE-The-Voice-Assistant" class="btn">View Project</a>
                     </div>
@@ -182,9 +185,13 @@
                 <div class="project-card">
                     <img src="project 3 logo.png" alt="Project 3">
                     <div class="card-content">
-                        <span class="card-title">Portfolio</span>
-                        <p class="card-description">This is a personal portfolio website designed to showcase the professional skills, projects, and achievements. The website features a clean, modern design that reflects a professional image, making it easy for potential employers or clients to navigate through your work and contact you.
-                            <br><b>Key Technology:</b> Html5 , CSS3 , JavaScript, Reactjs.</p>
+                        <span class="card-title">Protfolio Website</span>
+                        <p class="card-description">Designed and deployed a protfoilo website to showcase the
+                            professional skills, projects, and achievements. The website features a clean, modern design
+                            that reflects a professional image, making it easy for potential employers or clients to
+                            navigate through your work and contact you.
+                            <br><b>Key Technology:<b> Html5 , CSS3 , JavaScript, ReactJs.
+                        </p>
                         <a href="https://portfolio-20-avinash-akvs-projects.vercel.app/" class="btn">View Project</a>
                     </div>
                 </div>
@@ -206,18 +213,18 @@
                 </ul>
             </div>
             <div class="col s12 m6">
-                <form class="contact-form">
-                    <div class="input-field">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
+                <form id="contact-form">
+                    <div id="input-field">
+                        <input type="text" name="user_name" placeholder="Your Name">
+                        <label for="name"></label>
                     </div>
-                    <div class="input-field">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
+                    <div id="input-field">
+                        <input type="email" name="user_email" placeholder="Your Email">
+                        <label for="email"></label>
                     </div>
-                    <div class="input-field">
-                        <textarea id="message" name="message" class="materialize-textarea" required></textarea>
-                        <label for="message">Your Message</label>
+                    <div id="input-field">
+                        <textarea name="message" placeholder="Your Message" class="materialize-textarea" required></textarea>
+                        <label for="message"></label>
                     </div>
                     <button type="submit" class="btn waves-effect waves-light">Send</button>
                 </form>
@@ -232,32 +239,13 @@
         </div>
         </div>
     </footer>
-
-
-    <!-- Import jQuery and Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-
-            // Change navbar background on scroll
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 50) {
-                    $('nav').addClass('scrolled');
-                } else {
-                    $('nav').removeClass('scrolled');
-                }
-            });
-        });
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("1xun-zu3vU6oZzKy6");
+        })();
     </script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Data Analyst', 'Web Designer', 'Graphic Designer'],
-            typeSpeed: 50,
-        });
-    </script>
+
 </body>
 
 </html>
