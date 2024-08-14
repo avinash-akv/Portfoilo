@@ -202,12 +202,23 @@
     <!-- Contact Me Section -->
     <div class="container contact-section" id="contact">
         <h3>Contact Me</h3>
-        <form id="contact-form">
-            <input type="text" name="from_name" placeholder="Your Name">
-            <input type="email" name="user_email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message" class="materialize-textarea" required></textarea>
-            <button type="submit" class="btn waves-effect waves-light">Send</button>
+        <form class="contact-form" action=https://formspree.io/f/xldrnyqo method="POST">
+            <div class="input-field">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-field">
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input-field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
         </form>
+        
+
     </div>
 
     <!-- Footer -->
@@ -217,12 +228,6 @@
         </div>
         </div>
     </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("1xun-zu3vU6oZzKy6");
-        })();
-    </script>
 
 </body>
 

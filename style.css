@@ -532,6 +532,7 @@ nav .brand-logo:hover {
     position: relative;
     overflow: hidden;
     margin-bottom: 50px;
+    width: 70%;   
 }
 
 
@@ -556,74 +557,81 @@ nav .brand-logo:hover {
 }
 
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    padding: 15px;
+.contact-form .input-field {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: inline-flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 40px;
+    
+}
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
     background-color: #fff;
     box-sizing: border-box;
     border-color: #004d40;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
-#contact-form textarea {
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+.contact-form textarea {
     height: 150px;
-    resize: none;
+    resize: vertical;
 }
 
-#contact-form button[type="submit"] {
+.contact-form .btn {
     display: inline-block;
     width: 80%;
     background-color: #00796b;
     color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 10%;
-    
+    margin-left: 15%;
+    text-align: center;  
 }
 
-#contact-form button[type="submit"]:hover {
-    background-color: #2980b9;
+.contact-form .btn:hover {
+    background-color: #00796b;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #contact-form {
+    .contact-form .lable{
+        text-align: start;
+    }
+    .contact-form {
         padding: 15px;
     }
 
-    #contact-form input[type="text"],
-    #contact-form input[type="email"],
-    #contact-form textarea {
-        font-size: 14px;
-    }
-
-    #contact-form button[type="submit"] {
+    .contact-form .btn {
         font-size: 16px;
     }
 }
 
-@media (max-width: 480px) {
-
-    #contact-form input[type="text"],
-    #contact-form input[type="email"],
-    #contact-form textarea {
-        padding: 10px;
-    }
-
-    #contact-form button[type="submit"] {
-        padding: 12px;
-        font-size: 14px;
-    }
-}
 
 /* Footer Styling */
 .footer {
