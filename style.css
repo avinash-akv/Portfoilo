@@ -622,10 +622,11 @@ nav .brand-logo:hover {
     .contact-form .lable{
         text-align: start;
     }
-    .contact-form {
-        padding: 0px;
-    }
 
+    .contact-form {
+        padding: 15px;
+    }
+    
     .contact-form .btn {
         font-size: 16px;
     }
